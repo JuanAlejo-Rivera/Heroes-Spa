@@ -9,6 +9,7 @@ export const LoginPage = () => {
   const navigate = useNavigate()
   const onLogin = () => {
 
+    
     // Cuando le damos click al loguin navegaremos al valor guardado en el local stotage
     // Si no hay valor guardado refresamos al / que seria marvel
     const lastPath = localStorage.getItem('lastPath') || '/';
