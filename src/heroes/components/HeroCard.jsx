@@ -1,4 +1,6 @@
+import React from "react"
 import { Link } from "react-router-dom"
+
 
 const CharacterByhero = ({ alter_ego, characters }) => {
     // if (alter_ego === characters) return (<></>)

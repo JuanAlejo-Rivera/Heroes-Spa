@@ -3,6 +3,8 @@ import queryString from "query-string";
 import { useForm } from "../../hook/useForm";
 import { HeroCard } from "../components";
 import { getHerosByName } from "../helpers";
+import React from "react";
+
 
 export const SearchPage = () => {
 
@@ -20,7 +22,7 @@ export const SearchPage = () => {
 
 
   const { formState, onInputChange, onResetForm, SearchText } = useForm({
-    SearchText: ''
+    SearchText: q
     // SearchText: q //Si quiero que lo escrito en el input no se borre
   });
 
@@ -41,7 +43,7 @@ export const SearchPage = () => {
         <div className="col-5">
           <h4>Searching</h4>
           <hr />
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} aria-label="form">
             <input type="text"
               placeholder="Search a hero"
               className="form-control"
@@ -70,11 +72,11 @@ export const SearchPage = () => {
             )
           } */}
 
-          <div className="alert alert-primary animate__animated animate__fadeIn" style={{display: showSearch ? " ": 'none'}}>
+          <div aria-label="SearcHero" className="alert alert-primary animate__animated animate__fadeIn" style={{display: showSearch ? " ": 'none'}}>
             Search a hero
           </div>
 
-          <div className="alert alert-danger animate__animated animate__fadeIn" style={{display: showError ? " ": 'none' }}>
+          <div aria-label="Nohero" className="alert alert-danger animate__animated animate__fadeIn" style={{display: showError ? " ": 'none' }}>
             No hero with <b>{q}</b>
             </div>
 

@@ -1,4 +1,6 @@
+import React from "react"
 import { HeroeList } from "../components"
+
 
 export const MaverlPage = () => {
   return (

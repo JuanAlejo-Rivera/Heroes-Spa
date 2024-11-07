@@ -5,6 +5,8 @@ import { HeroesRutas, MaverlPage } from '../heroes'
 import { LoginPage } from '../auth'
 import { PrivateRoute } from './PrivateRoute'
 import { PublicRoute } from './PublicRoute'
+import React from 'react'
+
 
 export const AppRouter = () => {
     return (
