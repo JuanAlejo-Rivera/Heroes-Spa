@@ -1,7 +1,6 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroByid } from "../helpers";
-import { useMemo } from "react";
-
+import React, { useMemo } from "react";
 
 
 export const HeroPages = () => {
@@ -60,6 +59,7 @@ export const HeroPages = () => {
         <p>{hero.characters}</p>
 
         <button
+          aria-label="buttonNavigate"
           onClick={onNavigateback}
           className="btn btn-dark"
         >

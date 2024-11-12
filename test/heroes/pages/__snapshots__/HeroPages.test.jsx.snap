@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el HeroPages Se debe comprobar el boton de back 1`] = `
+<div>
+  <div
+    class="row mt-5"
+  >
+    <div
+      class="col-4"
+    >
+      <img
+        alt="Spider Man-prueba"
+        class="img-thumbnail animate__animated animate__fadeInLeft"
+        src="/heroes/marvel-spider.jpg"
+      />
+    </div>
+    <div
+      class="col-8"
+    >
+      <h3>
+        Spider Man-prueba
+      </h3>
+      <ul
+        class="list-group list-group-flush"
+      >
+        <li
+          class="list-group-item"
+        >
+           
+          <b>
+            Alter ego:
+          </b>
+           
+          Peter Parker-prueba
+           
+        </li>
+        <li
+          class="list-group-item"
+        >
+           
+          <b>
+            Publisher:
+          </b>
+           
+          Marvel Comics-prueba
+           
+        </li>
+        <li
+          class="list-group-item"
+        >
+           
+          <b>
+            First appearance:
+          </b>
+           
+          Amazing Fantasy #15-prueba
+           
+        </li>
+      </ul>
+      <h5
+        class="mt-3"
+      >
+         Characters
+      </h5>
+      <p>
+        Peter Parker-prueba
+      </p>
+      <button
+        aria-label="buttonNavigate"
+        class="btn btn-dark"
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</div>
+`;
